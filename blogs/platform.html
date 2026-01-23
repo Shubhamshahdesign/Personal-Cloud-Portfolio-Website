@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Technical Writing | Shubham Shah</title>
+  <meta name="description" content="Engineering notes on designing a production-grade CI/CD pipeline using GitHub Actions and Azure." />
+
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <main class="container blog-page">
+
+    <h1 class="blog-title">Platform Engineering: Building Golden Paths for Developers</h1>
+    <p class="blog-meta">
+      FinOps · Multi-cloud cost management · Cost visibility and monitoring · CloudHealth
+    </p>
+
+    <section class="blog-body">
+      <p>
+        This post describes engineering lessons from designing and validating a
+        production-grade CI/CD pipeline, focusing on automation, testing, and real-world readiness.
+      </p>
+
+      <h2>Overview</h2>
+      <p>
+        In real systems, a pipeline must be predictable, observable, and resilient.
+        Basic tutorials don’t cover rollback strategies or production-level test harnesses.
+      </p>
+
+      <h3>Architecture</h3>
+      <p>
+        The pipeline uses:
+      </p>
+      <ul>
+        <li>Terraform for infrastructure provisioning</li>
+        <li>GitHub Actions for multi-stage CI/CD</li>
+        <li>Automatic health checks and rollbacks</li>
+      </ul>
+
+      <h3>Testing & Validation</h3>
+      <p>
+        Load tests and dummy traffic were used to evaluate behaviour under stress.
+        Observability signals helped refine alerting and failure handling.
+      </p>
+
+      <h3>Key Takeaways</h3>
+      <p>
+        Production readiness means anticipating failure, validating rollback paths,
+        and automating observability — not just passing a green checkmark.
+      </p>
+
+    </section>
+
+  </main>
+
+    <!-- Floating Glass Island -->
+  <div class="floating-links">
+    <a href="https://github.com/Shubham3062" target="_blank">GitHub</a>
+    <span class="arrow">→</span>
+
+    <a href="https://linkedin.com/in/shubhamshah30" target="_blank">LinkedIn</a>
+    <span class="arrow">→</span>
+
+    <a href="mailto:shahshubham130@gmail.com">Email</a>
+    <span class="arrow rotate">↗</span>
+
+    <a href="https://drive.google.com/file/d/14gfav-YA8hjS4H4HjWq9LcYS4cqOZ7SB/view?usp=drive_link" target="_blank">CV</a>
+  </div>
+
+</body>
+</html>
