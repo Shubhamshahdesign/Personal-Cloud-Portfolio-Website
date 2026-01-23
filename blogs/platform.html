@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Technical Writing | Shubham Shah</title>
-  <meta name="description" content="Engineering notes on designing a production-grade CI/CD pipeline using GitHub Actions and Azure." />
+  <meta name="description" content="Engineering notes on building golden paths for developers." />
 
   <link rel="stylesheet" href="../css/style.css" />
 </head>
@@ -15,41 +15,70 @@
 
     <h1 class="blog-title">Platform Engineering: Building Golden Paths for Developers</h1>
     <p class="blog-meta">
-      FinOps · Multi-cloud cost management · Cost visibility and monitoring · CloudHealth
-    </p>
+      Internal Developer Platforms (IDPs) · Self-service infrastructure · GitOps principles · DevEx
 
     <section class="blog-body">
       <p>
-        This post describes engineering lessons from designing and validating a
-        production-grade CI/CD pipeline, focusing on automation, testing, and real-world readiness.
+        This post describes how self-service platforms that empower developers with golden paths, automation, and consistent guardrails.
       </p>
 
       <h2>Overview</h2>
       <p>
-        In real systems, a pipeline must be predictable, observable, and resilient.
-        Basic tutorials don’t cover rollback strategies or production-level test harnesses.
+        Remember when "DevOps" was the hot new thing? Well, the industry has evolved. We've learned that simply telling developers "you build it, you run it" isn't enough. Enter platform engineering—a practical approach that's changing how organizations deliver software.
       </p>
 
-      <h3>Architecture</h3>
+      <h3>What Is Platform Engineering?</h3>
       <p>
-        The pipeline uses:
+        Platform engineering is about building internal tools and workflows that make developers' lives easier. Think of it as creating a paved road instead of asking everyone to hack their way through the jungle with a machete.
       </p>
-      <ul>
-        <li>Terraform for infrastructure provisioning</li>
-        <li>GitHub Actions for multi-stage CI/CD</li>
-        <li>Automatic health checks and rollbacks</li>
-      </ul>
-
-      <h3>Testing & Validation</h3>
       <p>
-        Load tests and dummy traffic were used to evaluate behaviour under stress.
-        Observability signals helped refine alerting and failure handling.
+        The goal is simple: let developers focus on writing code that delivers business value, not wrestling with infrastructure. A good platform team builds what we call "golden paths" the easy, secure, and standardized way to do common tasks like deploying an application, creating a database, or setting up monitoring.
       </p>
 
-      <h3>Key Takeaways</h3>
+      <h3>Why the Shift?</h3>
       <p>
-        Production readiness means anticipating failure, validating rollback paths,
-        and automating observability — not just passing a green checkmark.
+        The traditional DevOps model had a problem. We asked developers to become infrastructure experts overnight. We gave them access to everything and said "good luck." This led to inconsistent deployments, security gaps, and frustrated developers who just wanted to ship features.
+      </p>
+      <p>
+        Organizations also created bottleneck "DevOps teams" that became gatekeepers. Want to deploy something? Submit a ticket and wait. This defeated the entire purpose of agile development.
+      </p>
+      <p>
+        Platform engineering solves this by providing self-service capabilities within guardrails. Developers get speed and autonomy. The organization gets consistency and control. Everyone wins.
+      </p>
+
+      <h3>What Does a Good Platform Look Like?</h3>
+      <p>
+        At its core, a developer platform provides three things: easy provisioning, clear visibility, and sensible defaults.
+      </p>
+      <p>
+        For provisioning, developers should be able to spin up new environments, databases, or services through simple interfaces—maybe a command-line tool, a web portal, or even just a Git commit. Behind the scenes, the platform handles the complexity: creating infrastructure, configuring networking, setting up monitoring, and applying security policies.
+      </p>
+      <p>
+        Visibility means developers can see what's happening with their applications. Is it deployed? Is it healthy? How much traffic is it handling? Integrated dashboards and logs answer these questions without requiring deep infrastructure knowledge.
+      </p>
+      <p>
+        Sensible defaults are crucial. Most applications need similar things: load balancing, SSL certificates, autoscaling, backup strategies. The platform should provide these out of the box, with options to customize when needed.
+      </p>
+
+      <h3>Tools and Technologies</h3>
+      <p>
+        Backstage, originally created by Spotify, has become the leading open-source framework for building developer portals. It creates a single pane of glass for all your services, documentation, and tools.
+      </p>
+      <p>
+        GitOps tools like ArgoCD and Flux enable declarative deployments. Developers describe what they want in Git, and the platform makes it happen. This creates an audit trail and enables easy rollbacks.
+      </p>
+      <p>
+        Infrastructure as Code using Terraform or OpenTofu allows platform teams to codify best practices. Instead of documentation that goes stale, the code becomes the documentation.
+      </p>
+
+      <h3>Measuring Success</h3>
+      <p>
+        Good platform teams measure their impact using metrics like deployment frequency, lead time for changes, and developer satisfaction scores. If your platform is working, developers should be shipping faster and spending less time on infrastructure concerns.
+      </p>
+
+      <h3>The Path Forward</h3>
+      <p>
+        Platform engineering isn't about replacing DevOps, it's about making DevOps sustainable at scale. Start by identifying common pain points in your development workflow. Build solutions for those problems. Iterate based on feedback. Over time, you'll create a platform that becomes your organization's competitive advantage.
       </p>
 
     </section>

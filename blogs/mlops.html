@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Technical Writing | Shubham Shah</title>
-  <meta name="description" content="Engineering notes on designing a production-grade CI/CD pipeline using GitHub Actions and Azure." />
+  <meta name="description" content="Engineering notes on vringing AI models from Notebooks to production." />
 
   <link rel="stylesheet" href="../css/style.css" />
 </head>
@@ -13,45 +13,74 @@
 
   <main class="container blog-page">
 
-    <h1 class="blog-title">FinOps: Taking Control of Your Cloud Spending</h1>
+    <h1 class="blog-title">MLOps: Bringing AI Models from Notebooks to Production</h1>
     <p class="blog-meta">
-      FinOps · Multi-cloud cost management · Cost visibility and monitoring · CloudHealth
+      MLOps · AI/ML at scale · Model lifecycle management · Model versioning and governance
     </p>
 
     <section class="blog-body">
       <p>
-        This post describes engineering lessons from designing and validating a
-        production-grade CI/CD pipeline, focusing on automation, testing, and real-world readiness.
+        This post describes engineering lessons on deploying AI models reliably at scale using automated pipelines, GPU infrastructure, and continuous monitoring.
       </p>
 
       <h2>Overview</h2>
       <p>
-        In real systems, a pipeline must be predictable, observable, and resilient.
-        Basic tutorials don’t cover rollback strategies or production-level test harnesses.
+        Artificial intelligence is everywhere right now. Every company wants to leverage AI and machine learning. But here's the dirty secret: most machine learning models never make it to production. The gap between a data scientist's Jupyter notebook and a production system serving millions of users is massive. This is where MLOps comes in.
       </p>
 
-      <h3>Architecture</h3>
+      <h3>What Is MLOps?</h3>
       <p>
-        The pipeline uses:
+        MLOps stands for Machine Learning Operations. It's DevOps principles applied to machine learning systems. While traditional DevOps deals with deploying code, MLOps handles the unique challenges of deploying models—things that need data, require retraining, drift over time, and consume serious computational resources.
       </p>
-      <ul>
-        <li>Terraform for infrastructure provisioning</li>
-        <li>GitHub Actions for multi-stage CI/CD</li>
-        <li>Automatic health checks and rollbacks</li>
-      </ul>
-
-      <h3>Testing & Validation</h3>
       <p>
-        Load tests and dummy traffic were used to evaluate behaviour under stress.
-        Observability signals helped refine alerting and failure handling.
+        Think about what makes ML different. Your application code is relatively static, but ML models are living things. They need fresh data to stay accurate. They require specialized hardware like GPUs. They can behave unpredictably when they encounter data they've never seen before. MLOps provides the frameworks and tools to handle these challenges.
       </p>
 
-      <h3>Key Takeaways</h3>
+      <h3>The Production Reality</h3>
       <p>
-        Production readiness means anticipating failure, validating rollback paths,
-        and automating observability — not just passing a green checkmark.
+        Getting a model to 95% accuracy in a notebook is exciting. Getting that same model to serve predictions reliably at scale, 24/7, with acceptable latency and cost that's where the real work begins.
+      </p>
+      <p>
+        You need infrastructure that can handle GPU workloads efficiently. GPUs are expensive, so you can't just leave them idle. You need orchestration systems that can scale up when demand spikes and scale down during quiet periods.
+      </p>
+      <p>
+        Data pipelines become critical. Models need fresh, clean data for both training and inference. You need systems to validate data quality, handle missing values, and catch distribution shifts that might break your model.
       </p>
 
+      <h3>Key Components of MLOps</h3>
+      <p>
+        Model versioning is essential. Just like code, you need to track different versions of your models. What data was used for training? What hyperparameters were set? How did it perform on test data? Tools like MLflow create this paper trail automatically.
+      </p>
+      <p>
+        Monitoring takes on new dimensions with ML. Beyond typical metrics like uptime and latency, you need to watch for model drift. Is your model's accuracy degrading over time? Are predictions taking longer than expected? Is the incoming data different from training data?
+      </p>
+      <p>
+        Continuous training pipelines automate the retraining process. When model performance drops below a threshold, trigger automatic retraining with fresh data. Test the new model against the old one. If it performs better, deploy it automatically.
+      </p>
+
+      <h3>Infrastructure Considerations</h3>
+      <p>
+        For large language models and deep learning workloads, GPU infrastructure is non-negotiable. Cloud providers offer various GPU instance types, but costs add up quickly. Strategies like using Spot instances for training jobs or optimizing batch sizes can cut costs dramatically.
+      </p>
+      <p>
+        Model serving requires different thinking than traditional application deployment. You might use specialized frameworks like TensorFlow Serving or TorchServe. For simpler models, wrapping them in a standard API framework works fine. The key is choosing the right tool for your scale and complexity.
+      </p>
+      <p>
+        Vector databases have become crucial for applications using embeddings like semantic search or recommendation systems. Tools like Pinecone, Weaviate, or PostgreSQL with pgvector provide efficient similarity search at scale.
+      </p>
+
+      <h3>Compliance and Governance</h3>
+      <p>
+        In Europe especially, GDPR adds complexity. How do you explain model decisions? Can you delete training data upon request? How do you ensure models don't perpetuate bias? MLOps frameworks need to address these questions from day one, not as afterthoughts.
+      </p>
+
+      <h3>Starting Your MLOps Journey</h3>
+      <p>
+        Begin with the basics: version control for models, automated testing, and proper monitoring. Use managed services where possible—they handle the infrastructure complexity while you focus on model quality. As you mature, build more sophisticated pipelines and automation.
+      </p>
+      <p>
+        The organizations winning with AI aren't necessarily those with the fanciest models. They're the ones who can reliably deliver model predictions to users, iterate quickly, and maintain quality over time. That's the promise of MLOps.
+      </p>
     </section>
 
   </main>
