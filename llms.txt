@@ -1,0 +1,30 @@
+# Shubham Shah
+
+> Junior Cloud & DevOps Engineer based in London, UK. MSc Cloud Computing graduate (University of East London) specialising in infrastructure automation, cloud cost optimisation, and DevSecOps-driven AI led systems. Open to graduate and junior roles in the UK and Europe. No visa sponsorship required in the UK until September 2028.
+
+## Quick facts
+- Location: London, United Kingdom
+- Looking for: graduate / junior Cloud Engineer, DevOps Engineer, Infrastructure Engineer, Platform Engineer, Site Reliability Engineer, Cloud Support Engineer and IT Support Engineer roles
+- Regions: UK and Europe
+- Right to work: no visa sponsorship required in the UK until Sept 2028
+- Cloud: Azure, AWS (primary), GCP (foundational exposure)
+- Tools: Terraform, GitHub Actions, Azure DevOps, Jenkins, Docker, Kubernetes, Prometheus, Grafana, Python, Linux, Shell
+- Contact: shahshubham130@gmail.com, https://www.linkedin.com/in/shubhamshah30, https://github.com/Shubham3062
+
+## Experience
+- Junior DevOps Engineer, University of East London (Placement Year), Oct 2025 to May 2026: Python log monitoring automation (~50% less manual effort), MTTR down ~45%, Prometheus and Grafana observability across dev, staging and production, Kubernetes services with automated rollback.
+- GenAI Developer Intern, Tata Consultancy Services, Jan 2024 to May 2024: Python deployment automation (~25% faster delivery), root cause analysis (~30% fewer recurring failures), cloud migration support.
+- Cloud Infrastructure & Security Intern, Celebal Technologies, May 2023 to Jul 2023: Azure hub-and-spoke networking, VNet peering, VPN gateways, NSGs, Azure DevOps CI/CD.
+
+## Projects
+- [DevMate - AI DevOps Teammate](https://github.com/Shubham3062/DevMate-AI-DevOps-Teammate): governed AI DevOps agent with RAG, troubleshooting skills, access policies and an MCP-ready architecture.
+- [Cloud Cost Forecasting System](https://drive.google.com/file/d/1mlfIGfrGMw0y7oA1GEj333Q5GN-JoqkY/view?usp=sharing): ML pipeline (XGBoost, LSTM) on Azure to predict cloud spend.
+- [Self-Service Infrastructure Provisioning Platform](https://github.com/Shubham3062/Self-Infra-Provision-Using-Terraform): Terraform and GitHub Actions self-service Azure provisioning.
+- [Secure Azure RBAC Automation Framework](https://github.com/Shubham3062/Secure-Azure-RBAC-Automation): Terraform-managed Azure RBAC.
+- [Automated Cost & Security Alert Dashboard on AWS](https://github.com/Shubham3062/Automated-Cost-Security-Alert-Dashboard-on-AWS): Lambda, CloudWatch, Boto3, SNS.
+- [Automated Rollback System](https://github.com/Shubham3062/Automated-Rollback-System): Kubernetes canary deployments with Prometheus and a Python controller.
+
+## Writing
+- [MLOps: Bringing AI Models from Notebooks to Production](https://shubhamshah-cloud.me/blogs/mlops.html)
+- [Platform Engineering: Building Golden Paths for Developers](https://shubhamshah-cloud.me/blogs/platform.html)
+- [FinOps: Taking Control of Your Cloud Spending](https://shubhamshah-cloud.me/blogs/finops.html)
