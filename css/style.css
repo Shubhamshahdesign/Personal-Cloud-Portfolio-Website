@@ -764,3 +764,44 @@ body {
   .experience-item { flex-direction: column; gap: 6px; }
   .experience-item .year { width: auto; }
 }
+
+/* Experience and skills as cards (same style as project cards) */
+.experience-list {
+  gap: 24px;
+}
+
+.experience-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 26px;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.skills li {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 26px;
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+.skills li strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 768px) {
+  .experience-item,
+  .skills li {
+    padding: 22px;
+  }
+
+  .skills {
+    grid-template-columns: 1fr;
+  }
+}
