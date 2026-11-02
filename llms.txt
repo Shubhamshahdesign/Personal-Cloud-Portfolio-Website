@@ -24,6 +24,9 @@
 - [Automated Cost & Security Alert Dashboard on AWS](https://github.com/Shubham3062/Automated-Cost-Security-Alert-Dashboard-on-AWS): Lambda, CloudWatch, Boto3, SNS.
 - [Automated Rollback System](https://github.com/Shubham3062/Automated-Rollback-System): Kubernetes canary deployments with Prometheus and a Python controller.
 
+## Currently learning
+- The AI infrastructure layer on top of Cloud and DevOps and building a project with llm-d to understand how requests are routed to LLMs.
+
 ## Writing
 - [MLOps: Bringing AI Models from Notebooks to Production](https://shubhamshah-cloud.me/blogs/mlops.html)
 - [Platform Engineering: Building Golden Paths for Developers](https://shubhamshah-cloud.me/blogs/platform.html)
